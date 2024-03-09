@@ -8,8 +8,8 @@ const app = express()
 let userName = ""
 app.use(bodyParser.urlencoded({extended: true}))
 app.get('/', (req,res) => res.sendFile(path.join(__dirname,'../dist/index.html')))
-app.get('/dist/node_modules/bootstrap/dist/css/bootstrap.min.css', (req,res) => res.sendFile(path.join(__dirname,'../dist/node_modules/bootstrap/dist/css/bootstrap.min.css')))
-app.get('/dist/node_modules/bootstrap/dist/js/bootstrap.min.js', (req,res) => res.sendFile(path.join(__dirname,'../dist/node_modules/bootstrap/dist/js/bootstrap.min.js')))
+app.get('/api/node_modules/bootstrap/dist/css/bootstrap.min.css', (req,res) => res.sendFile(path.join(__dirname,'../api/node_modules/bootstrap/dist/css/bootstrap.min.css')))
+app.get('/api/node_modules/bootstrap/dist/js/bootstrap.min.js', (req,res) => res.sendFile(path.join(__dirname,'../api/node_modules/bootstrap/dist/js/bootstrap.min.js')))
 app.get('/style.css', (req,res) => res.sendFile(path.join(__dirname,'../dist/style.css')))
 app.get('/app.js', (req,res) => res.sendFile(path.join(__dirname,'../dist/app.js')))
 app.post('/chat', (req, res) => {
