@@ -11,6 +11,7 @@
  form {
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
     gap: 4px;
  }
 
@@ -24,4 +25,8 @@
  input, button {
     border-radius: 10px;
     padding: 10px;
+ }
+
+ input {
+   max-width: 15rem;
  }
